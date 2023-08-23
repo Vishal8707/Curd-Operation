@@ -35,7 +35,7 @@ export default function Update() {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/updateData/${userId}`,
+        `https://operation-ice3.onrender.com/updateData/${userId}`,
         { emailId },
         {
           headers: {
