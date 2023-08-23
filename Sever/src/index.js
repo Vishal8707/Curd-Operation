@@ -7,7 +7,7 @@ const cors = require('cors')
 const app = express()
 app.use(express.json())
 
-app.use(cors())
+app.use(cors({origin:"*"}))
 
   mongoose.connect(process.env.DATABASE)
   .then(() => {console.log("MongoDB is connected")})
@@ -16,8 +16,8 @@ app.use(cors())
 app.use("/", route)
 
 
-app.listen(process.env.PORT ||5000, function () {
-console.log(`Express app running on port ${process.env.PORT}`)
+app.listen(process.env.PORT||5000, function () {
+console.log("Express app running on port 5000")
 })
 
 
