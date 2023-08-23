@@ -19,7 +19,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("https://operation-ice3.onrender.com/allUser", {
+      const response = await axios.get("https://operation-i1qy.onrender.com/allUser", {
       headers: {
         "x-api-key": `${user.data.token}` // Add the token to the headers
       }

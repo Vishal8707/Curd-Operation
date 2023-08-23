@@ -31,7 +31,7 @@ export default function Delete() {
 
     try {
       const response = await axios.delete(
-        `https://operation-ice3.onrender.com/delete/${userId}`,
+        `https://operation-i1qy.onrender.com/delete/${userId}`,
         {
           headers: {
             "x-api-key": `${checkToken.data.token}` // Add the token to the headers

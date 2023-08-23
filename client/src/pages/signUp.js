@@ -49,7 +49,7 @@ export default function Signup() {
     };
     try {
       const response = await axios.post(
-        "https://operation-ice3.onrender.com/register",
+        "https://operation-i1qy.onrender.com/register",
         userData
       );
 
